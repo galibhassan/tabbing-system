@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tabbing system</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <div id="tabs">
+    <button id="tab0" class="box tab">Schema</button>
+    <button id="tab1" class="box tab">Component</button>
+    <button id="tab2" class="box tab">DataBinding</button>
+    <button id="tab3" class="box tab">Application</button>
+  </div>
+  <div id="tabContainer">
+    <div id="tab0Content" class="tabContent box" contenteditable="true" spellcheck="false"> // Schema definitions </div>
+    <div id="tab1Content" class="tabContent box" contenteditable="true" spellcheck="false"> // Components class definitions </div>
+    <div id="tab2Content" class="tabContent box" contenteditable="true" spellcheck="false"> // DataBinding definitions </div>
+    <div id="tab3Content" class="tabContent box" contenteditable="true" spellcheck="false"> // Application details</div>
+  </div>
+  <div id="renderedAppSection" class="box">
+    <div class="titleBar"> Rendered app  <span style="float: right;">     id="renderedAppDiv"</span> </div>
+    <div id="renderedAppDiv" class="appOutput"> App output</div>
+  </div>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>

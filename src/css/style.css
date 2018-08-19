@@ -1,0 +1,66 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+}
+
+body{
+  display: grid;
+  grid-template-rows: 50px 500px;
+  grid-template-columns: 2fr 1fr;
+  margin: 50px;
+}
+
+.box{
+  box-shadow: 1px 1px 30px 1px rgba(0,0,0,.1);
+  padding: .6rem;
+  border-radius: 3px;
+}
+
+#tabs{
+  grid-row: 1/2;
+  border: 0px solid red;
+}
+#tabContainer{
+  grid-row: 2/3;
+  border: 0px solid rgb(232, 233, 238);
+}
+.tabContent{
+  height: 450px;
+  padding: 2rem;
+  display: none;
+  overflow: auto;
+  transition: opacity 1s;
+  resize: horizontal;
+}
+.tab{
+  cursor: pointer;
+  border: none;
+  font-family: Helvetica, sans-serif;
+  transition: background-color .4s;
+}
+.tab:focus{
+  outline: none;
+}
+#renderedAppSection{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-left: .5rem;
+  height: 500px;
+}
+.titleBar{
+  padding: .5rem;
+  background-color: rgb(138, 206, 218);
+  position: relative;
+  left: -.6rem;
+  top: -.6rem;
+  width: 101%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 1px 3px 20px 1px rgba(0,0,0,.2);
+  user-select: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.appOutput{
+  padding: 10px;
+}
